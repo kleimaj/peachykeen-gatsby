@@ -12,7 +12,7 @@ export const heroData = {
   title: 'We are ',
   name: 'Peachy Keen',
   subtitle: 'The SoCal jazz-funk band',
-  cta: 'Listen to us!',
+  cta: 'Learn more!',
 };
 
 // ABOUT DATA
@@ -67,28 +67,28 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
+      name: 'apple',
+      url: 'https://music.apple.com/us/artist/peachy-keen/260703918',
     },
     {
       id: nanoid(),
-      name: 'codepen',
-      url: '',
+      name: 'spotify',
+      url: 'https://open.spotify.com/artist/007oN9n0y5CQ4LmDF0rh1P',
     },
     {
       id: nanoid(),
-      name: 'linkedin',
-      url: '',
+      name: 'amazon',
+      url: 'https://music.amazon.in/albums/B08VWD6D1N',
     },
     {
       id: nanoid(),
-      name: 'github',
-      url: '',
+      name: 'youtube',
+      url: 'https://music.youtube.com/channel/UCuJq3XhWrXrla9aQT9HgAxg',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

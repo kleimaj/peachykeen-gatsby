@@ -6,6 +6,8 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
+  const { footer } = useContext(PortfolioContext);
+  const { networks } = footer;
   const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -35,46 +37,31 @@ const Header = () => {
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          {isMobile ? (
-            <>
-              <p className="hero-cta">
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    Apple Music
-                  </Link>
-                </span>
-              </p>
-              <p className="hero-cta">
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    Spotify
-                  </Link>
-                </span>
-              </p>
-              <p className="hero-cta">
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    Amazon Music
-                  </Link>
-                </span>
-              </p>
-              <p className="hero-cta">
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    Youtube Music
-                  </Link>
-                </span>
-              </p>
-            </>
-          ) : (
-            <p className="hero-cta">
-              <span className="cta-btn cta-btn--hero">
-                <Link to="about" smooth duration={1000}>
-                  {cta || 'Know more'}
-                </Link>
-              </span>
-            </p>
-          )}
+          <p className="hero-cta">
+            <span className="cta-btn cta-btn--hero">
+              <Link to="about" smooth duration={1000}>
+                {cta || 'Know more'}
+              </Link>
+            </span>
+          </p>
+          <div className="social-links">
+            {networks &&
+              networks.map((network) => {
+                const { id, name: networkName, url } = network;
+                return (
+                  <a
+                    className="black"
+                    key={id}
+                    href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label={networkName}
+                  >
+                    <i className={`fa fa-${networkName || 'refresh'} fa`} />
+                  </a>
+                );
+              })}
+          </div>
         </Fade>
       </Container>
     </section>
