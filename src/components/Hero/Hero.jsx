@@ -44,7 +44,7 @@ const Header = () => {
               </Link>
             </span>
           </p>
-          <div className="social-links">
+          <div className="social-links flex-start">
             {networks &&
               networks.map((network) => {
                 const { id, name: networkName, url } = network;
