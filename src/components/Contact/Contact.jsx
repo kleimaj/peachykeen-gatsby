@@ -33,7 +33,7 @@ const Contact = () => {
         ...message,
       }),
     })
-      .then(() => navigate('/submit'))
+      .then(() => navigate(e.target.getAttribute('action')))
       .catch((error) => {
         alert(error);
         navigate('/404');
@@ -52,11 +52,13 @@ const Contact = () => {
             <Form
               className="form mb-5"
               method="post"
+              action="/submit/"
               name="Contact Form"
               data-netlify-recaptcha="true"
               data-netlify="true"
               onSubmit={handleSubmit}
             >
+              <input type="hidden" name="form-name" value="Contact Form" />
               <FormGroup>
                 <FormLabel lg="3">Name</FormLabel>
                 <FormControl
