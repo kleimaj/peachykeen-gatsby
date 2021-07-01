@@ -78,6 +78,27 @@
     }
   }
 }
+.input-btn {
+  background-color: transparent;
+  &:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+}
 
 /* Arrow Button */
 .up i {

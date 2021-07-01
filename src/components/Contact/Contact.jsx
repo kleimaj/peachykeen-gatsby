@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container } from 'react-bootstrap';
+import { Container, Form, FormGroup, FormLabel, FormControl } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { cta } = contact;
 
   return (
     <section id="contact">
@@ -17,14 +17,40 @@ const Contact = () => {
             <p className="contact-wrapper__text">
               {cta || 'Would you like to have us play? Awesome!'}
             </p>
-            <a
+            <Form className="form mb-5" action="POST" data-netlify="true">
+              <FormGroup>
+                <FormLabel lg="3">Name</FormLabel>
+                <FormControl size="lg" type="text" name="name" />
+              </FormGroup>
+              <FormGroup>
+                <FormLabel>Email</FormLabel>
+                <FormControl size="lg" type="email" name="email" required />
+              </FormGroup>
+              <FormGroup>
+                <FormLabel>Subject</FormLabel>
+                <FormControl size="lg" type="text" name="subject" />
+              </FormGroup>
+              <FormGroup>
+                <FormLabel>Message</FormLabel>
+                <FormControl size="lg" as="textarea" rows={3} name="message" required />
+              </FormGroup>
+              <FormGroup>
+                <div data-netlify-recaptcha="true" />
+              </FormGroup>
+            </Form>
+            <input
+              className="input-btn cta-btn cta-btn--resume"
+              type="submit"
+              value="Send Message"
+            />
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
             >
               {btn || "Let's Talk"}
-            </a>
+            </a> */}
           </div>
         </Fade>
       </Container>
