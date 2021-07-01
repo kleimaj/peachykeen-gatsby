@@ -55,7 +55,7 @@ const Contact = () => {
               method="post"
               action="/submit/"
               name="Contact Form"
-              data-netlify-recaptcha="true"
+              // data-netlify-recaptcha="true"
               data-netlify="true"
               onSubmit={handleSubmit}
             >
@@ -103,9 +103,9 @@ const Contact = () => {
                   required
                 />
               </FormGroup>
-              <FormGroup>
-                <div data-netlify-recaptcha="true" />
-              </FormGroup>
+              {/* <FormGroup>
+                <div data-netlify-recaptcha="true"></div>
+              </FormGroup> */}
               <input
                 className="input-btn cta-btn cta-btn--resume"
                 type="submit"
