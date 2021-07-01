@@ -32,17 +32,17 @@ const Contact = () => {
               </FormGroup>
               <FormGroup>
                 <FormLabel>Message</FormLabel>
-                <FormControl size="lg" as="textarea" rows={3} name="message" required />
+                <FormControl size="lg" as="textarea" rows={5} name="message" required />
               </FormGroup>
               <FormGroup>
                 <div data-netlify-recaptcha="true" />
               </FormGroup>
+              <input
+                className="input-btn cta-btn cta-btn--resume"
+                type="submit"
+                value="Send Message"
+              />
             </Form>
-            <input
-              className="input-btn cta-btn cta-btn--resume"
-              type="submit"
-              value="Send Message"
-            />
             {/* <a
               target="_blank"
               rel="noopener noreferrer"

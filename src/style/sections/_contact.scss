@@ -37,8 +37,17 @@
     text-align: left;
     margin: 0 auto;
     width: 50%;
+    @include respond(tab-land) {
+      width: 70%;
+    }
+    @include respond(phone) {
+      width: 90%;
+    }
     label {
       font-size: 1.5rem;
+    }
+    textarea {
+      resize: none;
     }
   }
 }
