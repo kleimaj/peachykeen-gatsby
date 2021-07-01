@@ -28,10 +28,10 @@ const Contact = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...name,
-        ...email,
-        ...subject,
-        ...message,
+        name,
+        email,
+        subject,
+        message,
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
