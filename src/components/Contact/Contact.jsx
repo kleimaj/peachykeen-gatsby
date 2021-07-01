@@ -17,7 +17,7 @@ const Contact = () => {
             <p className="contact-wrapper__text">
               {cta || 'Would you like to have us play? Awesome!'}
             </p>
-            <Form className="form mb-5" action="POST" data-netlify="true">
+            <Form className="form mb-5" method="POST" data-netlify="true">
               <FormGroup>
                 <FormLabel lg="3">Name</FormLabel>
                 <FormControl size="lg" type="text" name="name" />
