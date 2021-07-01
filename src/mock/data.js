@@ -57,9 +57,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: 'Would you like to have us play? Awesome!',
+  btn: 'Contact Us',
+  email: 'peachykeenband.music@gmail.com',
 };
 
 // FOOTER DATA
@@ -82,8 +82,8 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'youtube',
-      url: 'https://music.youtube.com/channel/UCuJq3XhWrXrla9aQT9HgAxg',
+      name: 'instagram',
+      url: 'https://www.instagram.com/peachy.keen.music/?hl=en',
     },
   ],
 };

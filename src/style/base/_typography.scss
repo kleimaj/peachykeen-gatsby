@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@font-face {
+  font-family: 'Vulf Sans';
+  src: local('Vulf Sans'), url(vendor/fonts/VulfSans-Black.otf) format('opentype');
+}
 
 h1 {
   font-weight: 700;
 }
+// h1,h2,h3,h4,h5 {
+//   font-family: 'Vulf Sans';
+// }
 
 p,
 a {
