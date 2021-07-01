@@ -80,6 +80,8 @@
 }
 .input-btn {
   background-color: transparent;
+  margin: 25px auto;
+  display: flex;
   &:after {
     background-color: #fff;
     content: '';
