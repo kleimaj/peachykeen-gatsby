@@ -30,12 +30,12 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <PeachLogo id="logo" />
           <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
+            {title || 'We are'}{' '}
             <nobr>
-              <span className="text-color-main">{name || 'Your Name'}</span>
+              <span className="text-color-main">{name || 'Peachy Keen'}</span>
             </nobr>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            {subtitle || 'The SoCal jazz-funk band'}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
