@@ -22,18 +22,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const form = e.target;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': e.target.getAttribute('name'),
+        'form-name': form.getAttribute('name'),
         ...name,
         ...email,
         ...subject,
         ...message,
       }),
     })
-      .then(() => navigate(e.target.getAttribute('action')))
+      .then(() => navigate(form.getAttribute('action')))
       .catch((error) => {
         alert(error);
         navigate('/404');
