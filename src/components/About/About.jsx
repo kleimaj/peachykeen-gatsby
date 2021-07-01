@@ -40,15 +40,14 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Once upon a time in a desert in Northern Los Angeles lived four funky heebs and one guinea. They participated in high school choir, where they went on to find their passion in music. Years after graduating, studying music, computer science, nannying (among other things), they reconnected to create a special sound.'}
+                    'Once upon a time in a desert in Northern Los Angeles lived four funky heebs and one guinea. They all met in high school show choir, where they went on to find their passion in music and performing. Years after graduating, studying music, computer science, acting (among other things), they reconnected to create a special sound.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    "These characters weren't your average band, they found influence in R&B, funk, soul music, especially the sound of Motown music. They released their self-entitled EP during the start of quarantine, and they're ready to share all of their new music with you today."}
+                    "These characters weren't your average band, they found influence in R&B, funk, jazz, soul music, especially the sound of the Motown era. They released their self-entitled EP during the quarantine, and they're ready to share all of their new music with you today."}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree ||
-                    'They stand out from your average band, because they are friends, family, they are Peachy Keen.'}
+                  {paragraphThree || 'They are Peachy Keen 🍑.'}
                 </p>
 
                 <span className="d-flex mt-3">
