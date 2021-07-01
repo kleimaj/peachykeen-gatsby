@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'We are ',
-  name: 'Peachy Keen',
+  name: 'Peachy Keen 🍑',
   subtitle: 'The SoCal jazz-funk band',
   cta: 'Learn more!',
 };
