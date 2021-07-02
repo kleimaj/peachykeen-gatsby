@@ -48,7 +48,7 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree ||
-                    "You'll like these guys, they're alright. They're goodfellas. They are Peachy Keen 🍑"}
+                    'Dedicated to bringing fresh and funky tunes to your ears, they are Peachy Keen 🍑'}
                 </p>
 
                 <span className="d-flex mt-3">
