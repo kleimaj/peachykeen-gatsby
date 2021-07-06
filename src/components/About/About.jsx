@@ -44,7 +44,7 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    "These characters weren't your average band, they found influence in R&B, funk, jazz, soul music, especially the sound of the Motown era. They released their self-entitled EP during the quarantine, and they're ready to share all of their new music with you today."}
+                    "These characters weren't your average band, they found influence in R&B, funk, jazz, soul music, especially the sound of the Motown era. They released their self-titled EP during the quarantine, and they're ready to share all of their new music with you today."}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree ||
